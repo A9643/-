@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>设置变形效果</title>
+    <style>
+        .box2d,.box3d{
+            border: 1px dashed red;
+            width: 74px;
+            height: 102px;
+            float: left;
+            margin: 20px;        
+        }
+        .box3d{
+            /* 设置3D透视深度 */
+            perspective: 100px;
+        }
+        .box3d-style{
+            /* 设置元素以3D方式呈现 */
+            transform-style: preserve-3d;
+        }
+        .box1,.box2{
+            border: 1px solid #2e6da4;
+            width: 72px;
+            height: 100px;
+            font-size: 12px;
+            text-align: center;
+            background-image: url(img/A.png);
+            background-size: 100%;
+        }
+        .clearfloat{
+            clear: both;
+        }
+        .box1-2{
+            transform:skew(15deg,15deg); /* 2D倾斜 */
+        }
+        .box1-3{
+            transform:scale(0.8); /* 2D缩放 */
+        }
+        .box1-4{
+            transform:translate(-30px,-20px); /* 2D平移 */
+        }
+        .box1-5{
+            transform:rotate(30deg); /* 2D旋转 */
+        }
+        .box1-6{
+            transform:rotate(30deg);
+            transform-origin: left 0px; /* 修改变形原点 */
+        }
+        .box1-7{
+            transform:matrix(0.866,0.5,-0.5,0.866,0,0);  /* 使用2D矩阵实现和box1-6一样的效果 */
+            transform-origin: left 0px;
+        }
+        
+        .box2-2{          
+            transform:scale3d(1,1,1.5) rotate3d(0,1,0,30deg); /* 3D缩放 */
+        }
+        .box2-3{
+            transform:translate3d(0,0,-20px) ; /* 3D平移 */
+        }
+        .box2-4{
+            transform:rotate3d(0,1,0,30deg); /* 3D旋转 */
+        }
+        .box2-6{
+            position: absolute;
+            top: 0; 
+            transform:scale3d(1,1,1.5) translate3d(10px,15px,0) ;
+        }
+        .box2-5{
+            transform:matrix3d(0.866,0,-0.5,0,
+                               0,1,0,0,
+                               -0.5,0,0.866,0,
+                               0,0,0,1);  /* 使用3D矩阵实现和box2-4一样的效果 */
+        }
+        
+    </style>
+</head>
+<body>
+    <p>2D变形</p>
+    <div class="box2d"><div class="box1 box1-1">正常</div></div>
+    <div class="box2d"><div class="box1 box1-2">倾斜扭曲</div></div>
+    <div class="box2d"><div class="box1 box1-3">缩放</div></div>
+    <div class="box2d"><div class="box1 box1-4">平移</div></div>
+    <div class="box2d"><div class="box1 box1-5">旋转</div></div>
+    <div class="box2d"><div class="box1 box1-6">修改原点再旋转</div></div>
+    <div class="box2d"><div class="box1 box1-7">2D矩阵</div></div>
+    <p class="clearfloat">3D变形</p>
+    <div class="box3d"><div class="box2 box2-1">正常</div></div>
+    <div class="box3d"><div class="box2 box2-2">缩放</div></div>
+    <div class="box3d"><div class="box2 box2-3">平移</div></div>
+    <div class="box3d"><div class="box2 box2-4">旋转</div></div>
+    <div class="box3d"><div class="box2 box2-5">3D矩阵</div></div>
+    <div class="box3d"><div class="box2 box2-4">Flat</div><div class="box2 box2-6">Flat</div></div>
+    <div class="box3d box3d-style"><div class="box2 box2-4">3d</div><div class="box2 box2-6">3d</div></div>
+</body>

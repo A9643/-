@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>设置背景图像固定</title>
+    <style type="text/css">
+        #box2 {
+            background-attachment: fixed;        /* 固定位置 */
+        }
+        #box3 {
+            background-attachment: local;        /* 固定位置 */
+        }
+        .block {
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+            background-image: url(img/star.png);
+            background-repeat: no-repeat;        /* 不平铺 */
+            background-position: center;         /* 水平居中 */
+            overflow-y: scroll;                  /* 垂直方向溢出后使用滚动条*/
+
+        }
+    </style>
+</head>
+<body>
+    <p>设置背景图像固定</p>
+    <p>scroll</p>
+    <div id="box1" class="block">
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+    </div>
+    <p>fixed</p>
+    <div id="box2" class="block">
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+    </div>
+    <p>local</p>
+    <div id="box3" class="block">
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+        <p>向下滚动页面</p>
+    </div>
+</body>
