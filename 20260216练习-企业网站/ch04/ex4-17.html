@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>设置边框圆角、阴影</title>
+    <style>
+        .box1 {
+            border: 1px solid #2e6da4;
+            width: 400px;
+            height: 45px;
+            font-size: 32px;
+            text-align: center;
+            margin: 80px auto;
+        }
+        .box1:hover{
+            border-radius: 30px 30px 30px 30px / 30px 30px 10px 10px;  /* 设置圆角 */
+            box-shadow:10px 10px 10px 10px #444444;                  /* 设置阴影 */
+            background-color: #337ab7;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">移到元素上试试</div>
+</body>
