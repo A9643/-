@@ -1,0 +1,54 @@
+{
+    "editor.colorScheme" : "Default",
+    "editor.fontFmyCHS" : "楷体",
+    "editor.wordWrap" : true,
+    "explorer.folder.openExplorerViewOnClick" : true,
+    "files.associations.contextmenu" : true,
+    "localHistory.file.maxBackupDays" : 30,
+    "logInfo.auto.reportCrash" : false,
+    "editor.saveFoldStatus.enabled" : true,
+    "workbench.colorCustomizations" : {
+        "[Default]" : {
+            //pink
+            "sideBar.background" : "#ffeaff", //项目管理器颜色
+            "editor.background" : "#fff4fb", //编辑区颜色
+            "menubar.background" : "#ffe9f3", //菜单栏颜色
+            "toolBar.background" : "#ffe9f3", //工具栏颜色
+            "menubar.foreground" : "#000000", //菜单栏字体颜色
+            "editor.foreground" : "#000000", //字体or前景颜色
+            "editor.caretLine" : "#e9f3ff", //行颜色#d0deff
+            "editor.caret" : "#aaffff", //光标颜色
+            "editor.selection" : "#ffd7eb", //选中时颜色
+            "toolBar.border" : "lightpink", //工具栏边框
+            "sideBar.border" : "lightpink", //项目管理器边框
+            "toolBar.hoverBackground" : "#f1d2ff", //工具栏选中时颜色
+            "inputList.hoverBackground" : "#c1d2ff", //搜索栏选中时颜色
+            "input.background" : "#ffe9f3",
+            "list.activeSelectionBackground" : "#f1d2ff", //项目管理器选中时颜色
+            "list.hoverBackground" : "#d0deff", //项目管理器划过时颜色
+            "list.highlightForeground" : "#000000", //项目管理器字体颜色
+            "tab.hoverBackground" : "#f1d2ff", //标签划过时颜色
+            "button.hoverBackground" : "#f4dcff", //按钮划过时颜色？不知是哪个按钮
+            "tab.activeForeground" : "#ffffff", //当前标签字体颜色
+            "tab.activeBackground" : "#fcbed8", //当前标签背景颜色
+            "tab.inactiveBackground" : "#f4dcff", //标签背景颜色
+            "tab.inactiveForeground" : "#000000", //标签字体颜色
+            "list.activeSelectionForeground" : "#000000",
+            "scrollbarSlider.background" : "#d0deff", //滚动条颜色
+            "scrollbarSlider.hoverBackground" : "#c3d5ff", //鼠标触碰滚动条颜色
+            "extensionButton.prominentBackground" : "#f4dcff", //预览按钮颜色
+            "extensionButton.prominentForeground" : "#000000", //预览两字颜色
+            "extensionButton.border" : "#f4dcff", //预览按钮边框颜色
+            "extensionButton.prominentHoverBackground" : "#fcbed8",
+            "statusBar.background" : "#ffe9f3", //状态栏背景
+            "statusBar.foreground" : "#646464", //状态栏字体颜色
+            "editorSuggestWidget.background" : "#d0deff", //代码助手弹窗颜色
+            "editorSuggestWidget.border" : "#d0deff" //代码助手边框颜色
+			//浅紫色-项目管理器背景#ffeaff
+			//紫色-项目管理器当前项目背景颜色#f1d2ff
+			//淡紫色-标签颜色#f4dcff
+			//蓝色-滚动条#d0deff
+			//浅蓝色-当前行背景颜色#e9f3ff
+        }
+    }
+}
